@@ -19,3 +19,28 @@ time, mark, audio, video {
     vertical-align: baseline;
     list-style-type: none;
 }
+
+/*  
+    font-family: 'Fraunces', serif;
+    font-weight: 500/700;
+    
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700; 
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+
+.desktop_img {
+    display: none;
+}
+
+@media (min-width: 1024px) {
+    .mobile_img {
+        display: none;
+    }
+
+    .desktop_img {
+        display: block;
+    }
+}
