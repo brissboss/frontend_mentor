@@ -45,6 +45,7 @@ body {
     height: 100vh;
 
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
@@ -54,8 +55,8 @@ body {
 .card {
     border-radius: 10px;
 
-    width: 92%;
-    height: 92%;
+    width: 21rem;
+    height: 37rem;
 
     background-color: white;
 
@@ -91,7 +92,7 @@ body {
     letter-spacing: 3px;
     text-transform: uppercase;
 
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .large_title h1 {
@@ -108,9 +109,7 @@ body {
 }
 
 .description {
-    /* margin-bottom: 15px; */
     line-height: 21px;
-
 }
 
 .cart {
@@ -133,7 +132,7 @@ body {
 .real_price {
     color: hsl(158, 36%, 37%);
 
-    width:45%;
+    width:48%;
     font-family: 'Fraunces', serif;
     font-size: 30px;
 }
@@ -159,6 +158,14 @@ body {
     background-color: hsl(158, 36%, 37%);
 }
 
+.button img {
+    margin-right: 13px;
+}
+
+.attribution {
+    display: none;
+}
+
 @media (min-width: 1024px) {
     .mobile_img {
         display: none;
@@ -167,4 +174,60 @@ body {
     .desktop_img {
         display: block;
     }
+    
+    body {
+        font-size: 17px;
+    }
+
+    .card {
+        flex-direction: row;
+        width: 42rem;
+        height: 30rem;
+    }
+
+    .img {
+        height: 100%;
+        width: 60%;
+    }
+
+    .desktop_img {
+        border-radius: 10px 0px 0px 10px;
+
+        height: 100%;
+        width: 100%;
+    }
+
+    .card_content {
+        height: 90%;
+        width: 50%;
+
+        margin: 30px;
+
+        justify-content: space-around;
+    }
+
+    .large_title h1 {
+        line-height: 45px;
+        font-size: 37px;
+    }
+
+    .button {
+        transition-property: all;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 150ms;
+    }
+
+    .button:hover {
+        background-color: hsl(158, 36%, 30%);
+    }
+
+    .attribution {
+        display: block;
+        padding-top: 10px;
+    }
+
+    .attribution a {
+        color: blue;
+    }
+
 }
